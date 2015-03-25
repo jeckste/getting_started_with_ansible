@@ -1,0 +1,10 @@
+---
+
+- name: "template index.html.j2"
+  template:
+    src: "index.html.j2"
+    dest: "{{ application_home }}/{{ application_name }}/index.html"
+
+- name: "verify deployment"
+  script: verify.sh {{ application_home }}/{{ application_name }}/index.html
+

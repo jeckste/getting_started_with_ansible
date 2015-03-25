@@ -1,0 +1,7 @@
+---
+
+- name: create application folder
+  file: state=directory dest={{ item.dest }}
+  with_items:
+    - { dest: '{{ application_home }}/{{ application_name }}' }
+

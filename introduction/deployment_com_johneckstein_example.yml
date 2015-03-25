@@ -1,0 +1,12 @@
+---
+- name: "undeploy"
+  hosts: "{{ hosts }}"
+  remote_user: "{{ user }}"
+  roles:
+    - { role: undeploy_com_johneckstein_example, tags: [ 'undeploy' ]  }
+
+- name: "deploy"
+  hosts: "{{ hosts }}"
+  remote_user: "{{ user }}"
+  roles:
+    - { role: deploy_com_johneckstein_example, tags: [ 'deploy' ]  }

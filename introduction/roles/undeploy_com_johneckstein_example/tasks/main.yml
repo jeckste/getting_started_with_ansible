@@ -1,0 +1,6 @@
+---
+
+- name: "undeploy application"
+  file: 
+    path: "{{ application_home }}/{{ application_name }}" 
+    state: absent

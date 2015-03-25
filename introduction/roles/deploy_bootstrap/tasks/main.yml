@@ -1,0 +1,12 @@
+---
+
+- name: "upload bootstrap-3.3.2-dist.zip"
+  copy:
+    src: "bootstrap-3.3.2-dist.zip"
+    dest: "{{ application_home }}/{{ application_name }}"
+
+- name: "extract bootstrap-3.3.2-dist.zip"
+  unarchive:
+    src: "{{ application_home }}/{{ application_name }}/bootstrap-3.3.2-dist.zip"
+    dest: "{{ application_home }}/{{ application_name }}"
+    copy: no

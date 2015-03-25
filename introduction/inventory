@@ -1,0 +1,14 @@
+[local]
+localhost	ansible_connection=local
+
+[dev]
+node1.dev.johneckstein.com
+node2.dev.johneckstein.com
+
+[qa]
+node1.qa.johneckstein.com
+node2.qa.johneckstein.com
+
+[prod]
+node1.johneckstein.com
+node2.johneckstein.com

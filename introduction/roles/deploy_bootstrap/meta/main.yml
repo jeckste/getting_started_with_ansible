@@ -1,0 +1,5 @@
+---
+
+dependencies:
+  - { role: is_application_home_available }
+
